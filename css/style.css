@@ -12,9 +12,9 @@ body {
 .header .logo::before {
   content: "";
   position: absolute;
-  width: 28%;
+  width: 100%;
   height: 31%;
-  left: 36%;
+  left: 0%;
   bottom: 3px;
   background-color: #fec260;
   z-index: -1;
@@ -29,12 +29,16 @@ body {
   border-style: dotted;
 }
 
-.bookmark-body h2 {
+.bookmark-body-header h2,
+i {
   font-family: "Righteous", cursive;
   font-size: 25px;
+}
+.bookmark-body-header {
   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
   background-clip: text;
   color: transparent;
+  width: fit-content;
 }
 
 .btn-submit {
